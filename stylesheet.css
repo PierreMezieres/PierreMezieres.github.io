@@ -139,7 +139,7 @@ span.highlight {
   position:relative;
 }
 .history-tl-container ul.tl{
-    margin:5px 0;
+    margin:-5px 0;
     padding:0;
     display:inline-block;
 
