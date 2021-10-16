@@ -179,10 +179,10 @@ ul.tl li .item-detail{
     font-size:12px;
 }
 ul.tl li .timestamp{
-    color: #8D8D8D;
+    color: #2e2e2e;
     position: absolute;
   width:100px;
-    left: -50%;
+    left: -150%;
     text-align: right;
     font-size: 12px;
 }
