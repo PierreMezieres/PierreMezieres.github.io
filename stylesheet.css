@@ -194,6 +194,8 @@ ul.tl li .timestamp{
   background-color: #333;
   overflow: hidden;
   position: fixed;
+  text-align: center;
+  top: 0px;
 }
 
 /* Style the links inside the navigation bar */
