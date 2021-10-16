@@ -195,6 +195,7 @@ ul.tl li .timestamp{
   overflow: hidden;
   position: fixed;
   text-align: center;
+  left: 50%;
   top: 0px;
 }
 
