@@ -207,3 +207,7 @@ ul.tl li .timestamp{
   text-decoration: none;
   font-size: 17px;
 }
+
+.topnav a:hover {
+  color: #fffff;
+}
