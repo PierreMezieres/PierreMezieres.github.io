@@ -183,6 +183,7 @@ ul.tl li .timestamp{
     position: absolute;
   width:100px;
     left: -20%;
+    top: 5px;
     text-align: right;
     font-size: 12px;
 }
