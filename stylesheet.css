@@ -178,7 +178,7 @@ text-decoration: underline;
     margin-right:auto;
     left: 126px;
     min-height:50px;
-width:100%;border:0px;border-spacing:200px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px;
+width:100%;border:100px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:450px;
     /*background: rgba(255,255,0,0.1);*/
     border-left:2px dashed #86D6FF;
     padding:0 0 10px 30px;
