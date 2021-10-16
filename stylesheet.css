@@ -147,7 +147,7 @@ span.highlight {
 .history-tl-container ul.tl li{
     list-style: none;
     margin:auto;
-    margin-left:-50px;
+    margin-left:-100px;
     min-height:50px;
     /*background: rgba(255,255,0,0.1);*/
     border-left:1px dashed #86D6FF;
