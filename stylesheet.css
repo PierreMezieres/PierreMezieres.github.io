@@ -175,10 +175,11 @@ text-decoration: underline;
     list-style: none;
     margin:auto;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:126px;
     left: 126px;
+    right: 126px;
     /*background: rgba(255,255,0,0.1);*/
-    padding:0 126px 10px 30px;
+    padding:0 0px 10px 30px;
     border-left:2px dashed #86D6FF;
     position:relative;
 }
