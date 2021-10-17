@@ -133,8 +133,7 @@ span.highlight {
 
 /* Add a black background color to the top navigation */
 
-.topnav {display: inline flex;
-  flex-wrap: nowrap;
+.topnav {display: flex;
 z-index: 10000;
   background-color: #333;
   top: 0px;
