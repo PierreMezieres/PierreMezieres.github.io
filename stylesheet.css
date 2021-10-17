@@ -130,40 +130,19 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-@media (min-width: 830px) {
-.topnav {
-z-index: 10000;
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  left: 50%; 
-  transform: translate(-50%, 0);
-  top: 0px;
- width : 100%
-    text-align:center;
-}}
-@media (max-width: 830px) {
-.topnav {
-  display: none;
-z-index: 10000;
-  background-color: #333;
-  overflow: auto;
-  position: fixed;
-  left: 50%; 
-  transform: translate(-50%, 0);
-  top: 0px;
- width : 100%
-}}
 
 /* Add a black background color to the top navigation */
 
-.topnav {display: flex;
+.topnav {display: inline flex;
   flex-wrap: nowrap;
 z-index: 10000;
   background-color: #333;
   top: 0px;
- width : 100%
-    text-align:center;
+  position: fixed;
+  width:100%;
+  left: 50%; 
+  transform: translate(-50%, 0);
+  overflow: auto;
 }
 .customspace {
   margin-top:50px
