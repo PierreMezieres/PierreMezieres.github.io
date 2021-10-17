@@ -130,9 +130,7 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-
-
-/* Add a black background color to the top navigation */
+@media (min-width: 650px) {
 .topnav {
 z-index: 10000;
   background-color: #333;
@@ -141,8 +139,57 @@ z-index: 10000;
   left: 50%; 
   transform: translate(-50%, 0);
   top: 0px;
-}
+ width : 100%
+    text-align:center;
+}}
+@media (max-width: 650px) {
+.topnav {
+  display: none;
+z-index: 10000;
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  left: 50%; 
+  transform: translate(-50%, 0);
+  top: 0px;
+ width : 100%
+    text-align:center;
+}}
 
+/* Add a black background color to the top navigation */
+@media (min-width: 650px) {
+.topnav {
+z-index: 10000;
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  left: 50%; 
+  transform: translate(-50%, 0);
+  top: 0px;
+ width : 100%
+    text-align:center;
+}
+.customspace {
+  margin-top:50px
+}
+}
+@media (max-width: 650px) {
+.topnav {
+  display: none;
+z-index: 10000;
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  left: 50%; 
+  transform: translate(-50%, 0);
+  top: 0px;
+ width : 100%
+    text-align:center;
+}
+.customspace {
+  margin-top:0px
+}
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
