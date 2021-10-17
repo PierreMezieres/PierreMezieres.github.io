@@ -130,7 +130,7 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 830px) {
 .topnav {
 z-index: 10000;
   background-color: #333;
@@ -142,7 +142,7 @@ z-index: 10000;
  width : 100%
     text-align:center;
 }}
-@media (max-width: 650px) {
+@media (max-width: 830px) {
 .topnav {
   display: none;
 z-index: 10000;
