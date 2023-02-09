@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Pierre Mézières</title>
+  
+  <meta name="author" content="Pierre Mézières">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>  
+       <p style="position:relative;">
+    <a id="home" style="position:absolute; top:-50px;"></a></p>
+ <div class="topnav" style="width:100%;max-width:800px;text-align:center">
+  <a class="active" href="index.html" style="width:100%;max-width:800px;text-align:center">Return home page</a>
+</div> 
+  <table  style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:0px;"><tbody>
+    <div class="customspace"></div>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Rogue</name>
+              </p>
+              <p>
+
+              <p style="text-align:center;font-size:110%;">
+         (<b>R</b>ender <b>O</b>bject <b>G</b>raphic <b>U</b>seless <b>E</b>ngine)
+              </p>
+              <p>
+                3D engine oriented for fast real-time rendering prototyping. The last public version made was released before I started my PhD thesis.
+              </p>
+
+              <p style="text-align:center">
+                <a href="https://gitlab.com/PierreMezieres/Rogue"><img src="images/logoGitlab.png" width="35" alt="Gitlab"/></a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/rogue.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/rogue.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+       <p style="position:relative;">
+    <a id="publications" style="position:absolute; top:-50px;"></a></p>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>PhD Thesis</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/thesis.png"><img src='images/thesis.png' style="max-width:11em;width:100%;" alt="thesisPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+        <br>
+              My PhD thesis work is implemented in Rogue, see my <a href="index.html#publications">publications</a> for more details. 
+              <br> Thus various manipulation and rendering methods with spherical harmonics (SH) are implemented in it. See my <a href="Post/thesis_Pierre_Mezieres.pdf">PhD thesis</a> for more details on SH lighting simulation.
+              <br> Also, part of my thesis focuses on global lighting based on virtual sources, so several methods of this type are implemented in Rogue: <a href="https://dl.acm.org/doi/pdf/10.1145/258734.258769">VPL</a>, <a href="https://www.cs.cornell.edu/~kb/publications/SIGAsia09VSL.pdf">VSL</a>, <a href="https://yusuketokuyoshi.com/papers/2015/Virtual%20Spherical%20Gaussian%20Lights%20for%20Real-time%20Glossy%20Indirect%20Illumination%20(PG2015).pdf">VSGL</a>, <a href="http://www.klayge.org/material/3_12/GI/rsm.pdf">RSM</a> and <a href="https://resources.mpi-inf.mpg.de/ImperfectShadowMaps/index.html">ISM</a>. 
+              <br>       
+            </td>
+          </tr>  
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Other features / implementations</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/MBR.png"><img src='images/MBR.png' style="max-width:11em;width:100%;" alt="MBR"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle> Graduation project: <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/">Moment Based Rendering</a></papertitle>
+          <br> Re-implementation and comparison of six methods to compute shadows and transparency in real-time:
+
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/Reeves1987-RenderingAntialiasedShadowswithDepthMaps.pdf"> PCF </a>,
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/vsm_paper.pdf"> VSM </a> and
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/MomentShadowMapping.pdf"> MSM </a>
+    for shadows;
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/Interactive%20Order-Independent%20Transparency.pdf"> OIT </a>,
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/Weighted%20Blended%20Order-Independent%20Transparency.pdf"> WBOIT </a> and
+    <a href="http://fsi-dpt-info.univ-tlse3.fr/master-igai/2018-g1/references/Muenstermann2018-MBOIT.pdf"> MBOIT </a>
+    for transparency.
+
+     <br> Graduation project realized with Alban Odot, Baptiste Delos, Jean-Baptiste Sarazin and Mehdi Djemai.
+        <br> <a href="https://gitlab.com/PierreMezieres/Rogue">Code available on last Rogue public version</a>
+            </td>
+        </tbody></table>
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/rendering.png"><img src='images/rendering.png' style="max-width:11em;width:100%;" alt="renderingPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Rendering features</papertitle>
+        <br>
+              <br> Implementations of various rendering methods: SSAO, FXAA, HDR, BLOOM ...
+            </td>
+          </tr>  
+        </tbody></table>
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/lightlab.png"><img src='images/lightlab.png' style="max-width:11em;width:100%;" alt="lightlabPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Light lab</papertitle>
+        <br>
+              <br>  Module for testing light modification methods such as <a href="https://nmes.fr/research/local-light-alignment-for-multi-scale-shape-depiction">Local Light Alignment for Multi-Scale Shape Depiction</a>. 
+            </td>
+          </tr>  
+        </tbody></table>
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/matlab.png"><img src='images/matlab.png' style="max-width:11em;width:100%;" alt="matlabPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Material lab</papertitle>
+        <br>
+              <br> Implementation of various microfacet material models for on-the-fly comparison.    
+            </td>
+          </tr>  
+        </tbody></table>
+
+        
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/progue.png"><img src='images/progue.png' style="max-width:11em;width:100%;" alt="proguePNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>P.Rogue</papertitle>
+        <br>
+              <br> Physical engine based on mass-spring system.
+            </td>
+          </tr>  
+        </tbody></table>
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/lbs2.png"><img src='images/lbs2.png' style="max-width:11em;width:100%;" alt="lbsPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Animation</papertitle>
+        <br>
+              <br>  LBS and DQS implemented on CPU and GPU. 
+            </td>
+          </tr>  
+        </tbody></table>
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/bspline.png"><img src='images/bspline.png' style="max-width:11em;width:100%;" alt="bsplinePNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>B-spline</papertitle>
+        <br>
+              <br>  B-spline and B-spline surface  
+            </td>
+          </tr>  
+        </tbody></table>
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/subdivision2.png"><img src='images/subdivision2.png' style="max-width:11em;width:100%;" alt="subdivisionPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Mesh subdivison and decimation</papertitle>
+        <br>
+              <br>  Subdivision with refinement schemes (Catmull-Clark).
+            </td>
+          </tr>  
+        </tbody></table>
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/marchingcubes.png"><img src='images/marchingcubes.png' style="max-width:11em;width:100%;" alt="marchingcubesPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Marching cubes</papertitle>
+        <br>
+              <br> Marching cubes with metaballs.
+            </td>
+          </tr>  
+        </tbody></table>
+
+
+
+          <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
+                <a href="images/comparisonC.png"><img src='images/comparisonC.png' style="max-width:11em;width:100%;" alt="comparisonPNG"></a>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+                <papertitle>Comparison module</papertitle>
+        <br>
+              <br> On-the-fly comparison of images with different metrics.   
+            </td>
+          </tr>  
+        </tbody></table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
