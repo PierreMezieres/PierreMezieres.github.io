@@ -1,0 +1,257 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <meta author="Alban Odot">
+    <meta author="Baptiste Delos">
+    <meta author="Jean-Baptiste Sarazin">
+    <meta author="Mehdi Djemai">
+    <meta author="Pierre Mézières">
+    <meta charset="utf-8">
+    <title>Chef-d'Œuvre du M2 IGAI 2018/2019</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="topnav">
+	<div class="maintitle"><a name="top" href="#top">Moment Based Rendering</a></div>
+	<a href="#refs">RÉFÉRENCES ET LIVRABLES</a>
+	<a href="#productions">PRODUCTIONS</a>
+	<a href="#Pres">PRÉSENTATION</a>
+	<a href="#banner">ACCUEIL</a>
+ </div>
+
+<main><!-- Side navigation -->
+
+<div id="banner" class="banner">
+</div>
+<!--<div class="subheader">
+<h2>Chef-d'Œuvre de Master 2 IGAI 2018/2019</h2>
+<h2>Alban Odot, Baptiste Delos, Jean-Baptiste Sarazin, Mehdi Djemai et Pierre Mézières</h2>
+</div>-->
+
+<!-- main content between header and footer -->
+<div class="maincontent">
+
+<!-- Infos générales, Intro -->
+<!--<div id="intro">
+<header>
+    <a name="Pres"><h3><span class="titlebox">CONTEXTE</span></h3></a>
+</header>
+
+<nav>
+	<a name="Pres"><h3><span class="titlebox">OBJECTIFS</span></h3></a>
+</nav>-->
+
+<!-- Thèmes -->
+<!--<nav>
+</nav>
+
+</div>-->
+
+<section id="Pres">
+    <a name="Pres">
+    <h3><span class="titlebox">PRÉSENTATION</span></h3></a><br>
+    <p>
+	Dans le cadre du <a href="http://departement-informatique.univ-tlse3.fr/master-igai/" target="_blank">Master 2 Informatique Graphique et Analyse d'Images</a> de l'Université Paul Sabatier de Toulouse, l'équipe des <i>Moment Shadow Mappers</i>, dont on suppose que le nom fera sens rapidement, s'est consacrée au projet de Chef-d'Oeuvre intitulé <i>Moment Based Rendering</i>. Le principe général du Chef-d'Oeuvre consiste en l'implantation de travaux de recherches proposés récemment. L'équipe a œuvré sous la supervision de Mathias Paulin, enseignant chercheur à l'Institut de Recherche en Informatique de Toulouse et directeur de l'unité de recherche STORM.
+	</p>
+
+	<p>
+    Le sujet <i>Moment Based Rendering</i> fait référence à deux méthodes de rendu pour la synthèse d'ombres portées et d'objets transparents en temps réel : <i>Moment Shadow Mapping</i> <a href="#refs">[1]</a> et <i>Moment-Based Order Independent Transparency</i> <a href="#refs">[4]</a> respectivement. Les articles associés proposent des approches de reconstruction des fonctions de transparence et de visibilité, basés sur les moments statistiques calculés à partir du paramètre de profondeur des fragments. L'objectif de ce projet a consisté à étudier ces travaux vis-à-vis d'un ensemble de méthodes plus anciennes selon plusieurs critères de performance : la qualité visuelle, évaluée par rapport aux deux méthodes de référence pour la synthèse de la transparence <a href="#refs">[2]</a> et de l'ombrage <a href="#refs">[5]</a>; l'utilisation des ressources mémoire et le temps d'exécution, évaluées par rapport aux méthodes <a href="#refs">[3]</a> et <a href="#refs">[6]</a> pour les mêmes phénomènes.
+	</p>
+
+	<p>
+	L'ensemble de ces techniques, ainsi que les outils nécessaires pour leurs comparaisons, ont été intégrés au sein du moteur 3D Rogue, mis au point lors de ces deux dernières années de Master. Ce moteur a permis le développement des méthodes dans un environnement OpenGL et Qt, au prix de plusieurs améliorations ajoutées à sa structure initiale. Les travaux réalisés sont accessibles sur le dépôt GitLab du logiciel, sur la branche <a href="https://gitlab.com/PierreMezieres/Rogue/tree/CO-master" target="_blank">CO-master</a>.
+	</p>
+
+<table cellspacing="15">
+    	<tr>
+    		<td><h4></h4></td>
+    		<td><h4>Quelques exemples de résultats. </h4></td>
+    		<td><h4></h4></td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/skullSponza.png" target="_blank"><img src="images/skullSponza.png" alt="Skull" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/rexOmbr.png" target="_blank"><img src="images/rexOmbr.png" alt="Trex" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/rexTrans.png" target="_blank"><img src="images/rexTrans.png" alt="Monsters" width="300"></a></div></td>
+    	</tr>
+    	<tr>
+    		<td><h4></h4></td>
+    		<td><span class="titlebox3"><a href="https://argodark.artstation.com/"><font color="white" size="5">Pour en voir plus ...</font> </a> </span>
+    		<td><h4></h4></td>
+    	</tr>
+    </table>
+
+</section>
+
+<!-- Description détaillée -->
+
+<section id="productions">
+<a name="ombre">
+    <h3><span class="titlebox">PRODUCTIONS</span></h3></a><br>
+<p>
+La méthode de calcul d'ombrage <i>Moment based Shadow Mapping</i> (MSM) est comparée ici aux méthodes <i>Percentage Closer 
+Filtering</i> (PCF) comme méthode de référence et <i>Variance Shadow Mapping</i> (VSM) comme méthode intermédiaire, basée elle aussi
+sur des moments statistiques. L'objectif est ici de voir comment se comportent ces trois méthodes. La PCF donne de très
+bon résultats mais souffre d'un problème de performance, pouvant être problèmatique dans un contexte de rendu temps réel. 
+L'objectif de la MSM sera de fournir un rendu le plus proche possible de la PCF, avec de meilleurs performances. Cette approche 
+se base sur la VSM offrant d'excellentes performances mais des défauts visuels problématiques, comme de la fuite de lumière.
+</p>
+
+<section id="ombre">
+		<a name="ombre">
+    <h4><span class="titlebox2">OMBRAGE</span></h4></a>
+
+    <table cellspacing="30">
+    	<tr>
+    		<td><h4><i>Percentage Closer Filtering</i> [2]</h4></td>
+    		<td><h4><i>Variance Shadow Maps</i> [3]</h4></td>
+    		<td><h4><i>Moment Shadow Mapping</i> [1]</h4></td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/testPCF_3.png" target="_blank"><img src="images/testPCF_3.png" alt="PCF" width="300"></a></div></br>Aucune fuite de lumière</td>
+    		<td><div class="zoom"><a href="images/testVSM_3.png" target="_blank"><img src="images/testVSM_3.png" alt="VSM" width="300"></a></div></br>Fuite de lumière importante</td>
+    		<td><div class="zoom"><a href="images/testMSM_3.png" target="_blank"><img src="images/testMSM_3.png" alt="MSM" width="300"></a></div></br>Très légère fuite de lumière</td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/PCF_KS9_SD_2dot4_DB0dot016_1.png" target="_blank"><img src="images/PCF_KS9_SD_2dot4_DB0dot016_1.png" alt="PCF" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/VSM_KS9_SD2dot4_MinVar0dot000002_1.png" target="_blank"><img src="images/VSM_KS9_SD2dot4_MinVar0dot000002_1.png" alt="VSM" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/MSM_KS9_SD2dot4_MB3x10-5_DB0dot001_1.png" target="_blank"><img src="images/MSM_KS9_SD2dot4_MB3x10-5_DB0dot001_1.png" alt="MSM" width="300"></a></div></td>
+    	</tr>
+    </table>
+
+</section>
+
+<section id="transparence">
+		<a name="Transparence">
+    <h4><span class="titlebox2">TRANSPARENCE</span></h4></a>
+
+<p>
+La méthode de calcul de transparence <i>Moment based Order Independent Transparency</i> (MBOIT) est comparée ici 
+aux méthodes <i>depth peeling</i> comme méthode de référence et <i>Weighted Blended Order Independent Transparency</i> 
+(WBOIT) comme méthode intermédiaire. L'objectif est ici de voir comment se comportent ces trois méthodes. Le <i>depth peeling</i> 
+produits de bon résultats mais souffre d'un problème de performance et nécessite d'ếtre paramétré par le nombre de couches transparentes à représenter.
+Le nombre de passes de rendu réalisé, proportionnel à la complexité de la scène en terme de surfaces transparentes recouvertes successivement, explique les limites de la méthode dans le contexte du rendu temps réel. L'objectif de la méthode MBOIT sera de fournir un rendu le plus proche possible du <i>depth peeling</i>, avec de meilleurs
+ performances. La méthode WBOIT a l'avantage d'être performante, mais la qualité des résultats est directement dépendante de la configuration de la scène et de la fonction de coût utilisée.
+</p>
+
+
+    <table cellspacing="15">
+    	<tr>
+    		<td><h4><i>Depth Peeling</i> [5]</h4></td>
+    		<td><h4><i>Weighted Blended Order-Independent Transparency</i> [6]</h4></td>
+    		<td><h4><i>Moment-Based Order Independent Transparency</i> [4]</h4></td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/OIT-DepthPeeling-test7.png" target="_blank"><img src="images/OIT-DepthPeeling-test7.png" alt="DP" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/OIT-WBOIT-test7.png" target="_blank"><img src="images/OIT-WBOIT-test7.png" alt="WBOIT" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/OIT-MBOIT-test7.png" target="_blank"><img src="images/OIT-MBOIT-test7.png" alt="MBOIT" width="300"></a></div></td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/OIT-DepthPeeling-30.png" target="_blank"><img src="images/OIT-DepthPeeling-30.png" alt="DP" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/OIT-WBOIT-16-150-6.png" target="_blank"><img src="images/OIT-WBOIT-16-150-6.png" alt="WBOIT" width="300"></a></div></td>
+    		<td><div class="zoom"><a href="images/OIT-MBOIT-0,30-5^5-4pm.png" target="_blank"><img src="images/OIT-MBOIT-0,30-5^5-4pm.png" alt="MBOIT" width="300"></a></div></td>
+    	</tr>
+    </table>
+</section>
+
+<section id="comparaison">
+		<a name="comparaison">
+    <h4><span class="titlebox2">COMPARAISON</span></h4></a>
+    <p>
+Nous proposons également un module de comparaison d'images à l'aide d'opérateurs de différence dans trois 
+espaces de couleurs HSV, L*a*b* et niveau de gris. L'espace de couleur HSV(Hue Saturation Value) nous permet de séparer 
+la teinte, la saturation et la luminosité. L'espace de couleur L*a*b* est un espace de couleur où la répartition des 
+couleurs se rapproche de la perception des écarts de couleur par le système visuel humain. Voici un exemple de différence 
+en niveau de gris obtenu par la formule de conversion en luminosité pour mettre en évidence les fuites de lumières 
+causées par les différentes méthodes de calcul d'ombrage.
+</p>
+
+<table cellspacing="35">
+    	<tr>
+    		<td><div class="zoom"><a href="images/T_rexPCF.png" target="_blank"><img src="images/T_rexPCF.png" alt="PCF" width="300"></a></div></br>PCF</td>
+    		<td><div class="zoom"><a href="images/T_rexMSM.png" target="_blank"><img src="images/T_rexMSM.png" alt="MSM" width="300"></a></div></br>MSM</td>
+    		<td><div class="zoom"><a href="images/T_rexVSM.png" target="_blank"><img src="images/T_rexVSM.png" alt="VSM" width="300"></a></div></br>VSM</td>
+    	</tr>
+    	<tr>
+    		<td><div class="zoom"><a href="images/diffGrisPCF_MSM.png" target="_blank"><img src="images/diffGrisPCF_MSM.png" alt="PCF_MSM" width="300"></a></div></br>Différence PCF/MSM</td>
+    		<td><div class="zoom"><a href="images/diffGrisPCF_VSM.png" target="_blank"><img src="images/diffGrisPCF_VSM.png" alt="PCF_VSM" width="300"></a></div></br>Différence PCF/VSM</td>
+    		<td><div class="zoom"><a href="images/diffGrisMSM_VSM.png" target="_blank"><img src="images/diffGrisMSM_VSM.png" alt="MSM_VSM" width="300"></a></div></br>Différence MSM/VSM</td>
+    	</tr>
+    </table>
+
+</section>
+</section>
+
+</div>
+</main>
+
+
+<!-- Auteurs, références et livrables -->
+<footer id="refs">
+    <table cellspacing="12">
+        <tr>
+            <td><h2>L'équipe</h2></td>
+            <td><h2><b>Références</b></h2></td>
+            <td><b>Phases</b></td>
+            <td><b>Rapports</b></td>
+            <td><b>Diapositives</b></td>
+        </tr>
+        <tr>
+		
+            <td><b>Alban Odot</b></td>
+            <td><a href="references/MomentShadowMapping.pdf" target="_blank">
+                [1] C. Peters and R. Klein, <i>Moment Shadow Mapping</i> (2015)</a></td>
+            <td>Méthodes et Algorithmes</td>
+            <td><a name="rapports" href="reports/MBR-LMA.pdf" target="_blank"><img src="images/report.png" alt="Report logo" class="center" width="25"></a></td>
+            <td><a href="reports/MBR-LMA-Support.pdf" target="_blank"><img src="images/support.png" alt="Report logo" class="center" width="25"></a></td>
+        </tr>
+        <tr>
+            <td><b>Baptiste Delos</b></td>
+            <td><a href="references/Reeves1987-RenderingAntialiasedShadowswithDepthMaps.pdf" target="_blank">
+                [2] W. T. Reeves, D. H. Salesin and R. L. Cook, <i>Rendering Antialiased Shadows with Depth Maps</i> (1987)</a></td>
+            <td>Spécifications</td>
+            <td><a href="reports/MBR-Spec.pdf" target="_blank"><img src="images/report.png" alt="Report logo" class="center" width="25"></a></td>
+            <td><a href="reports/MBR-Spec-Support.pdf" target="_blank"><img src="images/support.png" alt="Report logo" class="center" width="25"></a></td>
+        </tr>
+        <tr>
+            <td><b>Jean-Baptiste Sarazin</b></td>
+            <td><a href="references/vsm_paper.pdf" target="_blank">
+                [3] W. Donnelly and A. Lauritzen, <i>Variance Shadow Maps</i> (2006)</a></td>
+            <td>Conception</td>
+            <td><a href="reports/MBR-Conception.pdf" target="_blank"><img src="images/report.png" alt="Report logo" class="center" width="25"></a></td>
+            <td><a href="reports/MBR-Conception-Support.pdf" target="_blank"><img src="images/support.png" alt="Report logo" class="center" width="25"></a></td>
+        </tr>
+        <tr>
+            <td><b>Mehdi Djemai</b></td>
+            <td><a href="references/Muenstermann2018-MBOIT.pdf" target="_blank">
+                [4] C. Münstermann, S. Krumpen, R. Klein, and C. Peters, <i>Moment-Based Order-
+Independent Transparency</i> (2018)</a></td>
+			<td>Recette</td>
+            <td><a href="reports/MBR-Recette.pdf" target="_blank"><img src="images/report.png" alt="Report logo" class="center" width="25"></a></td>
+            <td><a href="reports/MBR-Recette-Support.pdf" target="_blank"><img src="images/support.png" alt="Report logo" class="center" width="25"></a></td>
+        </tr>
+        <tr>
+            <td><b>Pierre Mézières</b></td>
+            <td><a href="references/Interactive Order-Independent Transparency.pdf" target="_blank">
+            	[5] C. Everitt, <i>Interactive Order-Independent Transparency</i> (2001)</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="references/Weighted Blended Order-Independent Transparency.pdf" target="_blank">
+                [6] M. McGuire and L. Bavoil, <i>Weighted Blended Order-Independent Transparency</i> (2013)</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</footer>
+
+
+</body>
+</html>
