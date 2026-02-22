@@ -34,8 +34,18 @@
 
 Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, in the <a href="https://manao.inria.fr/">MANAO</a> team.
 </p> 
-<p>  <!-- <b>Actual research interest</b> :
-  My current research focuses on the acquisition and representation of complex objects. 
+<p>   <b>Research interest</b> :
+My research develops along a coherent trajectory centered on the 
+<span style="color:#1f5c42;"><b>representation</b>, <b>computation</b>, and <b>reliability</b></span> 
+of <span style="color:#1f5c42;"><b>radiative transfer</b></span>. 
+It is guided by a clear objective: designing 
+<span style="color:#1f5c42;"><b>efficient yet physically meaningful representations</b></span> 
+of light transport. 
+This work has naturally evolved across application contexts, from 
+<b>real-time rendering</b>, 
+<b>appearance acquisition from measured data</b>, 
+and <b>physically-constrained optical simulation</b>.
+  <!-- My current research focuses on the acquisition and representation of complex objects. 
   This involves designing and developing physically-based processing pipelines to accurately 
   capture the appearance of intricate surfaces and materials. I am particularly interested in
    high-fidelity digital reproduction for real-time rendering applications, such as visualization, 
@@ -43,7 +53,7 @@ Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, i
    Given the large volumes of data generated, I also explore implicit representations (notably with machine learning) 
    to achieve compact, physically consistent, and metrologically reliable data compression. -->
               <p>
-		<b>Keywords</b> : material acquisition, rendering, efficiency, spherical harmonics
+		<b>Keywords</b> : material acquisition, rendering, optical simulation, efficiency, spherical harmonics
               </p>
               <p style="text-align:center">
                 <br><a href="https://twitter.com/PierreMezieres"><img src="images/logoTwitter.png" width="35" alt="twitter"/></a> &nbsp; &nbsp;
@@ -61,44 +71,50 @@ Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, i
           </tr>
         </tbody></table>
 
-       <p style="position:relative;">
-    <a id="publications" style="position:absolute; top:-50px;"></a></p>
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Representative publications and research interest</heading>
+              <heading>Representative publications</heading>
             </td>
           </tr>
         </tbody></table>
-My research develops along a coherent trajectory centered on the representation, computation, and reliability of radiative transfer. 
-It is guided by a clear objective: designing efficient yet physically meaningful representations of light transport. 
-This work has naturally evolved across application contexts, from real-time rendering, to appearance acquisition from measured data, 
-and more recently to physically-constrained optical simulation. <br><br>
 
-On the real-time rendering side, my contributions such as <a href="https://hal.archives-ouvertes.fr/hal-03622389">
-                <papertitle>Recursive analytic spherical harmonics gradient for spherical lights</papertitle>
-              </a>
-and <a href="https://hal.archives-ouvertes.fr/hal-03679979">
-                <papertitle>Harmonics Virtual Lights : fast projection of luminance field on spherical harmonics for efficient rendering</papertitle>
-              </a> investigate 
-how spherical harmonics can be exploited analytically and efficiently to simulate direct and indirect illumination under 
-strong performance constraints. These works focus on compact frequency-domain representations of radiance and on structuring 
-light transport computations to remain compatible with interactive and GPU-based pipelines.<br><br>
+On the <b>real-time rendering</b> side, my contributions such as 
+<a href="https://hal.archives-ouvertes.fr/hal-03622389">
+<papertitle>Recursive analytic spherical harmonics gradient for spherical lights</papertitle></a>&nbsp;<a href="#recursive" style="width:100%;max-width:800px;text-align:center">(&#x2193;)</a>
+and 
+<a href="https://hal.archives-ouvertes.fr/hal-03679979">
+<papertitle>Harmonics Virtual Lights : fast projection of luminance field on spherical harmonics for efficient rendering</papertitle>
+</a>&nbsp;<a href="#HVL" style="width:100%;max-width:800px;text-align:center">(&#x2193;)</a> investigate how 
+<span style="color:#1f5c42;"><b>spherical harmonics</b></span> 
+can be exploited <b>analytically</b> and <b>efficiently</b> to simulate 
+<b>direct and indirect illumination</b> under strong performance constraints. 
+These works focus on 
+<span style="color:#1f5c42;"><b>compact frequency-domain representations of radiance</b></span> 
+and on structuring light transport computations to remain compatible with 
+<b>interactive and GPU-based pipelines</b>.<br><br>
 
-This line of research was later extended toward the confrontation of rendering models with measured data. 
-In <a href="Post/LaCoupole.pdf">
-                <papertitle>La Coupole: A SVBRDF measurement device for large and non-planar objects</papertitle>
-              </a>, I explore the acquisition and reconstruction 
-of spatially varying reflectance from large-scale measurement campaigns, raising fundamental questions about calibration, 
-uncertainty, and the compatibility between rendering representations and physical measurements. This shift toward metrologically-grounded 
-modeling reinforced my interest in bias analysis and in the rigorous characterization of approximations.<br><br>
+This line of research was later extended toward the confrontation of rendering models with 
+<b>measured data</b>. In 
+<a href="Post/LaCoupole.pdf"> 
+<papertitle>La Coupole: A SVBRDF measurement device for large and non-planar objects</papertitle>
+</a>&nbsp;<a href="#coupole" style="width:100%;max-width:800px;text-align:center">(&#x2193;)</a>, I explore the acquisition and reconstruction of 
+<b>spatially varying reflectance</b> from large-scale measurement campaigns, 
+raising fundamental questions about 
+<span style="color:#1f5c42;"><b>calibration</b>, <b>uncertainty</b>, and <b>model–measurement compatibility</b></span>. 
+This shift toward <b>metrologically-grounded modeling</b> reinforced my interest in 
+<b>bias analysis</b> and in the rigorous characterization of approximations.<br><br>
 
-Overall, my current research aims at bridging computer graphics and optical science by structuring accelerated rendering 
-techniques into predictive, radiometrically reliable simulation tools, paving the way toward physically-controlled digital 
-twins of optical systems.
+Overall, my current research aims at 
+<span style="color:#1f5c42;"><b>bridging computer graphics and optical science</b></span> 
+by structuring accelerated rendering techniques into 
+<b>predictive</b>, <b>radiometrically reliable</b> simulation tools, 
+paving the way toward <span style="color:#1f5c42;"><b>physically-controlled digital twins of optical systems</b></span>.
 
+       <p style="position:relative;">
+    <a id="publications" style="position:absolute; top:-50px;"></a></p>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -108,6 +124,8 @@ twins of optical systems.
         </tbody></table>
 
 
+       <p style="position:relative;">
+    <a id="coupole" style="position:absolute; top:-50px;"></a></p>
           <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
           <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
             <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
@@ -156,6 +174,8 @@ twins of optical systems.
           </tr>  
         </tbody></table>
 
+       <p style="position:relative;">
+    <a id="recursive" style="position:absolute; top:-50px;"></a></p>
           <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
           <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
             <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
@@ -178,6 +198,8 @@ twins of optical systems.
           </tr>  
         </tbody></table>
 
+       <p style="position:relative;">
+    <a id="HVL" style="position:absolute; top:-50px;"></a></p>
           <table style="width:100%;min-width:300px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
           <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
             <td style="padding:5px;width:25%;vertical-align:middle;text-align: center;">
