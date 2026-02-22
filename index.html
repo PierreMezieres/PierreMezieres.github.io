@@ -34,14 +34,14 @@
 
 Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, in the <a href="https://manao.inria.fr/">MANAO</a> team.
 </p> 
-<p>  <b>Actual research interest</b> :
+<p>  <!-- <b>Actual research interest</b> :
   My current research focuses on the acquisition and representation of complex objects. 
   This involves designing and developing physically-based processing pipelines to accurately 
   capture the appearance of intricate surfaces and materials. I am particularly interested in
    high-fidelity digital reproduction for real-time rendering applications, such as visualization, 
    inspection, and diagnostics. A key aspect of this work is ensuring traceable, metrologically-sound data processing. 
    Given the large volumes of data generated, I also explore implicit representations (notably with machine learning) 
-   to achieve compact, physically consistent, and metrologically reliable data compression. 
+   to achieve compact, physically consistent, and metrologically reliable data compression. -->
               <p>
 		<b>Keywords</b> : material acquisition, rendering, efficiency, spherical harmonics
               </p>
@@ -63,6 +63,41 @@ Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, i
 
        <p style="position:relative;">
     <a id="publications" style="position:absolute; top:-50px;"></a></p>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Representative publications and research interest</heading>
+            </td>
+          </tr>
+        </tbody></table>
+My research develops along a coherent trajectory centered on the representation, computation, and reliability of radiative transfer. 
+It is guided by a clear objective: designing efficient yet physically meaningful representations of light transport. 
+This work has naturally evolved across application contexts, from real-time rendering, to appearance acquisition from measured data, 
+and more recently to physically-constrained optical simulation. <br><br>
+
+On the real-time rendering side, my contributions such as <a href="https://hal.archives-ouvertes.fr/hal-03622389">
+                <papertitle>Recursive analytic spherical harmonics gradient for spherical lights</papertitle>
+              </a>
+and <a href="https://hal.archives-ouvertes.fr/hal-03679979">
+                <papertitle>Harmonics Virtual Lights : fast projection of luminance field on spherical harmonics for efficient rendering</papertitle>
+              </a> investigate 
+how spherical harmonics can be exploited analytically and efficiently to simulate direct and indirect illumination under 
+strong performance constraints. These works focus on compact frequency-domain representations of radiance and on structuring 
+light transport computations to remain compatible with interactive and GPU-based pipelines.<br><br>
+
+This line of research was later extended toward the confrontation of rendering models with measured data. 
+In <a href="Post/LaCoupole.pdf">
+                <papertitle>La Coupole: A SVBRDF measurement device for large and non-planar objects</papertitle>
+              </a>, I explore the acquisition and reconstruction 
+of spatially varying reflectance from large-scale measurement campaigns, raising fundamental questions about calibration, 
+uncertainty, and the compatibility between rendering representations and physical measurements. This shift toward metrologically-grounded 
+modeling reinforced my interest in bias analysis and in the rigorous characterization of approximations.<br><br>
+
+Overall, my current research aims at bridging computer graphics and optical science by structuring accelerated rendering 
+techniques into predictive, radiometrically reliable simulation tools, paving the way toward physically-controlled digital 
+twins of optical systems.
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -149,7 +184,7 @@ Post-doctoral fellow at <a href="https://www.inria.fr/fr">INRIA</a>, Bordeaux, i
                 <a href="images/HVL.jpg"><img src='images/HVL.jpg' style="max-width:11em;width:100%;" alt="SHseparableBrdf"></a>
             </td>
             <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2201.01487">
+              <a href="https://hal.archives-ouvertes.fr/hal-03679979">
                 <papertitle>Harmonics Virtual Lights : fast projection of luminance field on spherical harmonics for efficient rendering</papertitle>
               </a>
         <br>
